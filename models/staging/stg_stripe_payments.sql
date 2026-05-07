@@ -6,4 +6,4 @@ select
     amount / 100 as payment_amount,
     created as payment_created_date
 from
-    raw.JAFFLE_SHOP.payments
+    {{source('jaffle_shop', 'payments')}}
