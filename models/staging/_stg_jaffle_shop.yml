@@ -30,7 +30,7 @@ models:
   - name: order_date
     description: "The date when the order was placed."
   - name: status
-    description: "The current status of the order. Possible values include 'shipped', 'return_pending', 'placed', 'completed', and 'returned'."
+    description: "{{ doc('order_status') }}"
     data_tests:
     - accepted_values:
         arguments:
