@@ -6,7 +6,7 @@ sources:
   - name: customers
     description: "Raw customers table contains information about the customers of the Jaffle Shop."
     config:
-      loaded_at_field: "convert_timezone('America/Chicago', 'UTC', loaded_at)"
+      loaded_at_field: "convert_timezone('America/Los_Angeles', 'UTC', loaded_at)"
       freshness:
         warn_after: { count: 12, period: hour }
         # error_after: { count: 2, period: day }
@@ -16,14 +16,14 @@ sources:
   - name: orders
     description: "Raw orders table contains information about the orders placed by customers at the Jaffle Shop."
     config:
-      loaded_at_field: "convert_timezone('America/Chicago', 'UTC', loaded_at)"
+      loaded_at_field: "convert_timezone('America/Los_Angeles', 'UTC', loaded_at)"
       freshness:
         warn_after: { count: 12, period: hour }
         # error_after: { count: 2, period: day }
   - name: payments
     description: "Raw payments table contains information about the payments made for orders at the Jaffle Shop."
     config:
-      loaded_at_field: "convert_timezone('America/Chicago', 'UTC', loaded_at)"
+      loaded_at_field: "convert_timezone('America/Los_Angeles', 'UTC', loaded_at)"
       freshness:
         warn_after: { count: 12, period: hour }
         # error_after: { count: 2, period: day }
