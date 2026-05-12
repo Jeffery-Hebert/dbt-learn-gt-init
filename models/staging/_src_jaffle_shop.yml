@@ -8,7 +8,7 @@ sources:
     config:
       loaded_at_field: loaded_at
       freshness:
-        warn_after: { count: 1, period: hour }
+        warn_after: { count: 12, period: hour }
         # error_after: { count: 2, period: day }
     columns:
     - name: id
@@ -18,7 +18,7 @@ sources:
     config:
       loaded_at_field: loaded_at
       freshness:
-        warn_after: { count: 1, period: hour }
+        warn_after: { count: 12, period: hour }
         # error_after: { count: 2, period: day }
   - name: payments
     description: "Raw payments table contains information about the payments made for orders at the Jaffle Shop."
