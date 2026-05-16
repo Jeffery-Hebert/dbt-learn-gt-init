@@ -3,7 +3,7 @@ models:
   description: "Staging model for the customers table from the jaffle_shop source."
   columns:
   - name: customer_id
-    description: "The unique identifier for each customer."
+    description: "Stable identifier for each customer. Primary key; Never recycled. Join Key across marts"
     data_tests:
     - not_null
     - unique
@@ -20,7 +20,7 @@ models:
     - not_null
     - unique
   - name: customer_id
-    description: "The identifier for the customer who placed the order."
+    description: "Customer who placed the order. Foreign key to customers table. Cannot be null (tested)."
     data_tests:
     - not_null
     - relationships:

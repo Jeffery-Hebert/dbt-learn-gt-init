@@ -12,7 +12,7 @@ sources:
         # error_after: { count: 2, period: day }
     columns:
     - name: id
-      description: "PK"
+      description: "Stable identifier for each customer. Primary key; Never recycled."
   - name: orders
     description: "Raw orders table contains information about the orders placed by customers at the Jaffle Shop."
     config:
